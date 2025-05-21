@@ -19,7 +19,7 @@ namespace BookApp.Data.Database
         {
             Database.EnsureCreated();
         }
-        string connString = "User ID=postgres;Password=KnightOfCalamandra3124;Host=localhost;Port=5432;Database=BookDB;Pooling=true;";
+        string connString = "";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql(connString);
